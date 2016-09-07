@@ -1,0 +1,289 @@
+<!DOCTYPE HTML>
+<!--
+	Ion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<!--
+	https://css-tricks.com/snippets/jquery/smooth-scrolling/
+	Smooth scrolling with JQuery
+-->
+<html>
+	<head>
+		<title>Chicago Crime and Infrastructure</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	</head>
+	<body id="top">
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<h1>
+					<a href="http://www.datascience.berkeley.edu" target="_blank">
+						<img src="images/ds_at_berkeley.png" height="26" width="267" align="bottom" alt="datascience@berkeley">
+					</a>
+				</h1>
+				<!-- <nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#vis1">Summary Data</a></li>
+						<li><a href="#mainvis">Map</a></li>
+						<li><a href="#reading">Further Reading</a></li>
+						<li><a href="#credits">Credits</a></li>
+					</ul>
+				</nav> -->
+			</header>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<h2>Chicago Crime & Infrastructure</h2>
+					<p>Marlea Gwinn, Rich Johnson, Shanti Greene, and Tim David.</p>
+					<ul class="actions">
+						<li><a class="button big special">Tell me more
+							<i class="icon fa-arrow-circle-down minor"></i>
+						</a></li>
+						<li><a class="button big special">Explore the Data
+							<i class="icon fa-arrow-circle-down minor"></i>
+						</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<a name="about"></a>
+			<section id="one" class="wrapper style1">
+				<header class="major">
+					<h2>What role does infrastructure play in crime?</h2>
+					<p>Let's explore this question using data from the city of Chicago.</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="6u">
+							<section class="special box">
+								<i class="icon fa-lightbulb-o major"></i>
+								<h3>Why this idea?</h3>
+								<p>We are interested in the role that infrastructure plays in inner-city crime. Our curiosity led us to develop this interactive visualization where users can explore crime in the city of Chicago and see when it occurs near broken street lights. This project is just one step towards understanding the effects infrastructure has on a community. By better understanding the impacts of infrastructure on urban crime we can build safer cities and neighborhoods.</p>
+							</section>
+						</div>
+						<div class="6u">
+							<section class="special box">
+								<i class="icon fa-area-chart major"></i>
+								<h3>The Data</h3>
+								<p>Our data was sourced from the <a href="https://data.cityofchicago.org/">City of Chicago's open data portal</a>. We combined two datasets, one containing crime data for the city and the other containing repair requests for broken street lights. In this stitching process we determined if a crime occurred near a broken street light or not. Here, we define "near" as within 100 feet. Because of the size of these data and the varying levels of completeness, we chose to focus our efforts on 2012, the most recent year with infrastructure data.</p>
+							</section>
+						</div>
+						<!--<div class="4u">
+							<section class="special box">
+								<i class="icon fa-cog major"></i>
+								<h3>The Technology</h3>
+								<p>Buy it, use it, break it, fix it,
+								Trash it, change it, mail, upgrade it,
+								Charge it, point it, zoom it, press it,
+								Snap it, work it, quick, erase it,
+								Write it, cut it, paste it, save it,
+								Load it, check it, quick, rewrite it
+								Plug it, play it, burn it, rip it,
+								Drag and drop it, zip, unzip it,</p>
+							</section>
+						</div> -->
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<a name="vis1"></a>
+			<section id="two" class="wrapper style2">
+				<header class="major">
+					<h3>First Thing's First</h3>
+					<p>Take a look below to familiarize yourself with some details about Chicago, the crime there, and the street lights</p>
+				</header>
+				<div class="container">
+					<div class="row">
+						<div class="6u">
+							<section class="special">
+								<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+								<div class='tableauPlaceholder' style='width: 1004px; height: 895px;'>
+									<noscript>
+										<!--<a href='#'>
+											<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnimationOfCrimesNearBrokenLights&#47;CrimeByWeek&#47;1_rss.png' style='border: none' />
+										</a> -->
+									</noscript>
+									<object class='tableauViz' width='600' height='400' style='display:none;'>
+										<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+										<param name='site_root' value='' />
+										<param name='name' value='AnimationOfCrimesNearBrokenLights&#47;CrimeByWeek' />
+										<param name='tabs' value='no' />
+										<param name='toolbar' value='no' />
+										<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnimationOfCrimesNearBrokenLights&#47;CrimeByWeek&#47;1.png' />
+										<param name='animate_transition' value='yes' />
+										<param name='display_static_image' value='yes' />
+										<param name='display_spinner' value='no' />
+										<param name='display_overlay' value='yes' />
+										<param name='display_count' value='no' />
+										<param name='showVizHome' value='no' />
+										<param name='showTabs' value='no' />
+										<param name='bootstrapWhenNotified' value='true' />
+									</object>
+								</div>
+								<h3>Crime Occurrence By Week</h3>
+								<p>This graph shows crime occurrence in Chicago by time of year. In addition, you can filter it by crime and whether you only want to look at crimes that occur at a certain time of day. Use this graph to explore seasonality in Chicago crime occurrences.</p>
+								<!--<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul> -->
+							</section>
+						</div>
+						<div class="6u">
+							<section class="special">
+								<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+								<div class='tableauPlaceholder' style='width: 1004px; height: 895px;'>
+									<noscript>
+										<!--<a href='#'>
+											<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnimationOfCrimesNearBrokenLights&#47;CrimeByHOUR&#47;1_rss.png' style='border: none' />
+										</a> -->
+									</noscript>
+									<object class='tableauViz' width='600' height='400' style='display:none;'>
+										<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+										<param name='site_root' value='' />
+										<param name='name' value='AnimationOfCrimesNearBrokenLights&#47;CrimeByHour' />
+										<param name='tabs' value='no' />
+										<param name='toolbar' value='no' />
+										<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnimationOfCrimesNearBrokenLights&#47;CrimeByHour&#47;1.png' />
+										<param name='animate_transition' value='yes' />
+										<param name='display_static_image' value='yes' />
+										<param name='display_spinner' value='no' />
+										<param name='display_overlay' value='yes' />
+										<param name='display_count' value='no' />
+										<param name='showVizHome' value='no' />
+										<param name='showTabs' value='no' />
+										<param name='bootstrapWhenNotified' value='true' />
+									</object>
+								</div>
+								<h3>Crime by Time of Day</h3>
+								<p>This interactive map allows you to explore where in the city certain crimes occur. Additionally you can use the show history feature to keep a running log of where crimes occurred throughout the day. Protip: try combining Show History with the Day or Night checkboxes.</p>
+								<!--<ul class="actions">
+									<li><a href="#" class="button alt">Learn More</a></li>
+								</ul> -->
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<a name="mainvis"></a>
+			<section id="three" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="10u">
+							<section>
+								<h2>2012 Chicago Crime & Street Lights</h2>
+								<div class="11u">
+									<p>This interactive chart allows you to navigate through time and explore various crime occurrences in the city of Chicago and whether they occurred near a burnt out streetlight or not. Additionally, you can toggle whether to display crimes that occur just at night, during the day, or both.<br>
+									Try finding clusters of crime near burnt out lights. Was there crime in the area before the lights burnt out? After? You may be on track to finding evidence of the lights influencing crime!</p>
+								</div>
+								<script type='text/javascript' src='https://public.tableau.com/javascripts/api/viz_v1.js'></script>
+								<div class='tableauPlaceholder' style='width: 1250px; height: 919px;'>
+									<noscript>
+										<!--<a href='#'>
+											<img alt='Crimes by Proximity to Light ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnimationOfCrimesNearBrokenLights&#47;CrimesbyProximitytoLight&#47;1_rss.png' style='border: none' />
+										</a> -->
+									</noscript>
+									<object class='tableauViz' width='1250' height='919' style='display:none;overflow:hidden'>
+										<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+										<param name='site_root' value='' />
+										<param name='name' value='AnimationOfCrimesNearBrokenLights&#47;CrimesbyProximitytoLight' />
+										<param name='tabs' value='no' />
+										<param name='toolbar' value='yes' />
+										<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;An&#47;AnimationOfCrimesNearBrokenLights&#47;CrimesbyProximitytoLight&#47;1.png' />
+										<param name='animate_transition' value='yes' />
+										<param name='display_static_image' value='yes' />
+										<param name='display_spinner' value='yes' />
+										<param name='display_overlay' value='yes' />
+										<param name='display_count' value='yes' />
+										<param name='showVizHome' value='no' />
+										<param name='showTabs' value='y' />
+										<param name='bootstrapWhenNotified' value='true' />
+									</object>
+								</div>
+							</section>
+						</div>
+						<!--<div class="3u">
+							<section>
+								<br><br>
+								<p>This interactive chart allows you to navigate through time and explore various crime occurrences in the city of Chicago and whether they occurred near a burnt out streetlight or not. Additionally, you can toggle whether to display crimes that occur just at night, during the day, or both.</p>
+							</section>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			<section id="four" class="wrapper style2">
+				<div class="container">
+					<div class="11u">
+						<h2>Conclusion</h2>
+						<p>Research reports correlations between infrastructure and crime. The results, however, are inconclusive in regards to the effect of street lights on crime. Our exploration above reveals several neighborhoods that show signs of an effect, but the overall results are largely inconclusive. This illustrates the complexity of the issue and that further research and better data collection is necessary to reveal the true answer to this question.<br><br><br><br><br><br><br>
+						</p>
+					</div>
+				</div>
+			</section>
+			<a name="reading"></a>
+			<section id="five" class="wrapper style1">
+				<div class="container">
+					<div class="11u">
+						<h2>Further Reading</h2>
+						<ul class="alt">
+							<li><a href="http://www.ocpa-oh.org/Evaluation%20and%20Research/Effect%20of%20Street%20Lighting%20on%20Crime%20-%20UK.pdf" target="_blank">The effect of better street lighting on crime and fear: A review.</a></li>
+							<li><a href="http://www.nature.com/nature/journal/v467/n7318/abs/467912a.html" target="_blank">A unified theory of urban living.</a></li>
+							<li><a href="http://www.tandfonline.com/doi/abs/10.1080/07418820200095261#.VmRRxfkrJhE" target="_blank">Improved street lighting and crime prevention.</a></li>
+							<li><a href="http://www.popcenter.org/problems/street_robbery/PDFs/PainterFarrington1999.pdf" target="_blank">Street lighting and crime: diffusion of benefits in the Stoke-on-Trent project.</a></li>
+						</ul><br><br><br><br><br><br>
+					</div>
+				</div>
+			</section>
+		<!-- Footer -->
+			<a name="credits"></a>
+			<footer id="footer">
+				<div class="container">
+					<div class="row double">
+						<div class="11u">
+							<div class="row collapse-at-2">
+								<div class="3u">
+									<h3>Creators</h3>
+									<ul class="alt">
+										<li><a href="https://www.linkedin.com/in/marleagwinn" target="_blank">Marlea Gwinn</a></li>
+										<li><a href="https://www.linkedin.com/in/richard-johnson-51493489" target="_blank">Rich Johnson</a></li>
+										<li><a href="https://www.linkedin.com/in/shantigreene" target="_blank">Shanti Greene</a></li>
+										<li><a href="https://www.linkedin.com/pub/tim-david/39/b0/232" target="_blank">Tim David</a></li>
+									</ul>
+								</div>
+								<div class="6u">
+									<h3>Guidance</h3>
+									<p>This project was created by our awesome team under the instruction of <a href="http://www.ischool.berkeley.edu/people/faculty/danielperry" target="_blank">Daniel Perry</a> as part of UC Berkeley's <a href="http://www.datascience.berkeley.edu" target="_blank"> MIDS </a> program. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="copyright">
+						<li>&copy; 2015. All rights reserved.</li>
+						<li>Design: <a href="http://templated.co" target="_blank">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com" target="_blank">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+	</body>
+</html>
